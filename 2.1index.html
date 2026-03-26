@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insane Productivity</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background-color:#000000;
+  color:white;
+}
+
+/* CONTENEDOR */
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:50px auto;
+  background:#000000;
+  padding:40px;
+}
+
+/* NAV */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:60px;
+}
+
+.logo{
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:2px;
+  color:white;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+.menu li{
+  cursor:pointer;
+  font-size:14px;
+  font-weight:500;
+  color:white;
+  transition:0.3s;
+}
+
+.menu li:hover{
+  color:#ff0000;
+}
+
+/* HERO SECTION */
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:40px;
+}
+
+.hero-text h1{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:20px;
+  color:white;
+}
+
+.hero-text p{
+  font-size:14px;
+  margin-bottom:20px;
+  color:#dddddd;
+}
+
+.hero-text button{
+  padding:10px 20px;
+  border:1px solid white;
+  background:transparent;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-text button:hover{
+  background:white;
+  color:black;
+}
+
+.hero-img img{
+  width:100%;
+  border-radius:4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.hero{
+  grid-template-columns:1fr;
+}
+
+.hero-text h1{
+  font-size:36px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+<div class="logo">INSANE PRODUCTIVITY</div>
+
+<ul class="menu">
+<li>HOME</li>
+<li>ABOUT</li>
+<li>SCHEDULES</li>
+<li>WEBINAR</li>
+<li>FAQ</li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Insane Productivity</h1>
+
+<p>
+Gear up to work. Organiza tu tiempo y mejora tu enfoque con herramientas
+diseñadas para maximizar tu rendimiento diario.
+</p>
+
+<button>READ MORE</button>
+</div>
+
+<div class="hero-img">
+<img src="https://picsum.photos/600/800?1g" alt="Persona trabajando">
+</div>
+
+<div class="hero-img">
+<img src="https://picsum.photos/600/800?2" alt="Persona trabajando">
+</div>
+
+<div class="hero-img">
+<img src="https://picsum.photos/600/800?3" alt="Persona trabajando">
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
